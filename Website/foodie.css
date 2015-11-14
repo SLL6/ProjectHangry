@@ -5,3 +5,11 @@ body {
 h1 {
 	text-align:center;
 }
+
+.navbar {
+	background-color:#FF3B30;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a{
+	color:#fff;
+}
