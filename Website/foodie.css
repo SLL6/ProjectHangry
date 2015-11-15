@@ -44,10 +44,24 @@ p {
 	text-align:center;
 }
 
-.meta-search ul, li {
-    list-style-type: none;
+.row-margin {
+	margin-bottom:20px;
 }
 
-.plus {
-	text-align:right;
+.foodie-rating {
+
+}
+
+.foodie-time {
+
+}
+
+.foodie-missing {
+
+}
+
+.foodie-match {
+	text-align:center;
+	color:rgb(38, 230, 34);
+	font-size:18pt;
 }
