@@ -9,7 +9,10 @@
 
     <!-- Bootstrap -->
     <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Other Stylesheets -->
     <link href="foodie.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Foodie</a>
+          <a class="navbar-brand fancy" href="#">Foodie</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -40,8 +43,8 @@
             </li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Sign Up</a></li>
-            <li><a href="../navbar-static-top/">Log In</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#sign-up">Sign Up</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#log-in">Login</a></li>
             
           </ul>
         </div><!--/.nav-collapse -->
@@ -49,14 +52,75 @@
     </nav>
 
     <div class="container">
-      <h1>Foodie</h1>
-      <p style="text-align:center;">Input your ingredients, we'll give you the recipes!</p>
-    </div>
+      <h1 class="fancy">Foodie</h1>
+      <p class="foodie-subtitle">Your next meal is waiting.</p>
+      <h2>Start off by entering the ingredients in your kitchen.</h2>
+
+
+      <!-- SEARCH BOX -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Start typing...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Continue</button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-md-8 -->
+        <div class="col-md-2"></div>
+      </div><!-- /.row -->
+
+
+      <h6>Don't worry, you can add more ingredients later :)</h6>
+
+      <!-- SignUp Modal -->
+      <div class="modal fade" id="sign-up" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Sign Up</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Login Modal -->
+      <div class="modal fade" id="log-in" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div><!-- /.container -->
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+
   </body>
 </html>

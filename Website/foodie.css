@@ -2,14 +2,44 @@ body {
 	padding-top:70px;
 }
 
-h1 {
+h1, h2, h6 {
 	text-align:center;
+}
+
+p {
+	text-align:center;
+}
+
+.foodie-subtitle {
+	margin:-10px 0px 0px 0px;
 }
 
 .navbar {
 	background-color:#FF3B30;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-brand {
 	color:#fff;
+	font-size:24px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:#fff;
+}
+
+.fancy {
+	font-family: 'Lobster', cursive;
+}
+
+.btn {
+	background-color:#3C82E7;
+	color:#fff;
+}
+
+.form-control {
+	color:#FF3B30;
+}
+
+#signUp {
+
 }
