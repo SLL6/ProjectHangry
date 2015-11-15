@@ -58,28 +58,49 @@
     </nav>
 
     <div class="container">
-      <h1 class="fancy">Foodie</h1>
-      <p class="foodie-subtitle">Your next meal is waiting.</p>
-      <h2 class="center">Start off by entering the ingredients in your kitchen.</h2>
 
-
-      <!-- SEARCH BOX -->
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Start typing...">
-            <span class="input-group-btn">
+        <div class="col-md-3">
+          <h2>Recipe matches: </h2>
+          <h3>Filter</h3>
+          <h4>Ingredients</h4>
+          <h4>Cookware</h4>
+        </div>
+        <div class="col-md-9">
 
-              <a href="matches.html" class="btn btn-default">Continue</a>
-            </span>
-          </div><!-- /input-group -->
-        </div><!-- /.col-md-8 -->
-        <div class="col-md-2"></div>
+          <section class="col-xs-12 col-sm-6 col-md-12">
+              <article class="search-result row">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                  <a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/food" alt="Lorem ipsum" /></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 center">
+                  <ul class="meta-search">
+                    <li><span>60% Match</span></li>
+                    <li><i class="glyphicon glyphicon-time"></i> <br>20m</li>
+                    <li>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star"></i>
+                      <i class="glyphicon glyphicon-star"></i> 
+                      <span>Rating</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
+                  <h3><a href="#" title="">Voluptatem exercitationem</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>            
+                  <div class="plus"><h3><a href="#" title="Cook"><i class="glyphicon glyphicon-hand-right"></i></a></h3></div>
+                </div>
+                <span class="clearfix borda"></span>
+              </article>
+
+            </section>        
+
+        </div><!-- /.col-md-9 -->
       </div><!-- /.row -->
 
 
-      <h6>Don't worry, you can add more ingredients later :)</h6>
 
       <!-- SignUp Modal -->
       <div class="modal fade" id="sign-up" role="dialog">
