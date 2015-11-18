@@ -1,6 +1,5 @@
 
 foodieApp.controller("MainController", function($scope){
-    var vm = this;
     $scope.title = 'Foodie';
 });
 
