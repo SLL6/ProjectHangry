@@ -31,6 +31,8 @@ p {
 
 .fancy {
 	font-family: 'Lobster', cursive;
+    font-size:4.5em;
+    letter-spacing: 3px;
 }
 
 .btn {
@@ -44,6 +46,9 @@ p {
 
 .center {
 	text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size:26px;
+    margin-top:40px;
 }
 
 .row-margin {
