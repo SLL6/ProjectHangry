@@ -49,7 +49,17 @@
       }
 
       function login() {
-        user.logIn(document.getElementById('inputUsername').value, document.getElementById('inputPassword').value);
+        var user = new Parse.User();
+        user.logIn(document.getElementById('inputUsername').value, document.getElementById('inputPassword').value, {
+          success: function(user) {
+            // Logged in.
+            alert("Such username. Much log in. wow");
+          },
+          error: function(user, error) {
+            // error with logging in.
+            alert("Error: " + error.code + " " + error.message);
+          }
+        });
       }
   </script>
   <body ng-app="app" ng-controller="MainController as main">
