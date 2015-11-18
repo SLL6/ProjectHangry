@@ -33,7 +33,7 @@
       Parse.initialize("RPHzbIdiqdMBlE5mPuf0lB6pJXAjpkRDyIT0fS3S", "YVlTAu8q6VwVVPRmrvBKNtPelasbu4CPKHSZVf00");
       function makeAccount() {
         var user = new Parse.User();
-        user.set("username", "alex");
+        user.set("username", document.getElementById('inputUsername').value);
         user.set("password", document.getElementById('inputPassword').value);
         user.set("email", document.getElementById('inputEmail').value);
           
@@ -46,6 +46,10 @@
             alert("Error: " + error.code + " " + error.message);
           }
         });
+      }
+
+      function login() {
+        user.logIn(document.getElementById('inputUsername').value, document.getElementById('inputPassword').value);
       }
   </script>
   <body ng-app="app" ng-controller="MainController as main">
@@ -118,6 +122,9 @@
 
               <!-- Sign up fields -->
               <form>
+                <div class="form-group">
+                    <input type="username" class="form-control" id="inputUsername" placeholder="Username">
+                </div>
                 <div class="form-group">
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
