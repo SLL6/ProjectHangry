@@ -17,6 +17,7 @@ p {
 .foodie-subtitle {
 	margin:-10px 0px 0px 0px;
     font-family: 'Oswald', sans-serif;
+    font-size:18px;
 }
 
 .navbar {
@@ -38,8 +39,9 @@ p {
 
 .fancy {
 	font-family: 'Lobster', cursive;
-    font-size:4.5em;
+    font-size:4em;
     letter-spacing: 3px;
+    color:#E74C3C
 }
 
 .navbartext {
