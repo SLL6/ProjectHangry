@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Lobster); 
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 
 body {
 	padding-top:70px;
@@ -15,6 +16,7 @@ p {
 
 .foodie-subtitle {
 	margin:-10px 0px 0px 0px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .navbar {
@@ -30,6 +32,10 @@ p {
 	color:#fff;
 }
 
+.navbar-right{
+    font-family: 'Oswald', sans-serif;
+}
+
 .fancy {
 	font-family: 'Lobster', cursive;
     font-size:4.5em;
@@ -38,6 +44,10 @@ p {
 
 .navbartext {
     letter-spacing:normal;
+}
+
+#topspacing {
+    margin-top: 50px;
 }
 
 .btn {
