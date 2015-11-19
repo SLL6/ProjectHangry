@@ -49,8 +49,7 @@
       }
 
       function login() {
-        var user = new Parse.User();
-        user.logIn(document.getElementById('inputUsername').value, document.getElementById('inputPassword').value, {
+        Parse.User.logIn(document.getElementById('inputUsername').value, document.getElementById('inputPassword').value, {
           success: function(user) {
             // Logged in.
             alert("Such username. Much log in. wow");
@@ -180,7 +179,7 @@
                     <input type="checkbox" value="remember-me"> Remember me
                   </label>
                 </div>
-                <div class="center"><button class="btn btn-md btn-primary" type="submit">Login</button></div>
+                <div class="center"><button class="btn btn-md btn-primary" type="submit" onclick="login()">Login</button></div>
               </form>
             
 
