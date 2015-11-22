@@ -11,6 +11,10 @@ h1, h6 {
 	text-align:center;
 }
 
+h3 {
+	margin:0;
+}
+
 p {
 	text-align:center;
 }
@@ -36,6 +40,14 @@ p {
 
 .navbar-right{
     font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+  background-image:url("index.jpg"); 
+  height: 710px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
 }
 
 .fancy {
@@ -78,6 +90,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size:26px;
     margin-top:40px;
+    color: white;
 }
 
 .row-margin {
