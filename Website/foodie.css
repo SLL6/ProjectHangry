@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Lobster); 
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
 	padding-top:70px;
@@ -16,7 +17,7 @@ p {
 
 .foodie-subtitle {
 	margin:-10px 0px 0px 0px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size:18px;
 }
 
@@ -34,7 +35,7 @@ p {
 }
 
 .navbar-right{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .fancy {
@@ -57,13 +58,24 @@ p {
 	color:#fff;
 }
 
+.btn-primary {
+    background-color:#E74C3C;
+    width:60px;
+    height:20px;
+}
+
+
 .form-control {
 	color:#FF3B30;
 }
 
+.container {
+    font-family: 'Raleway', sans-serif;
+}
+
 .center {
 	text-align:center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size:26px;
     margin-top:40px;
 }
@@ -89,3 +101,4 @@ p {
 	color:rgb(38, 230, 34);
 	font-size:18pt;
 }
+
