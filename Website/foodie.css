@@ -72,6 +72,11 @@ p {
 
 .navbartext {
     letter-spacing:normal;
+    font-family: 'Lobster', cursive;
+    font-size:4em;
+    color:#E74C3C;
+    text-shadow: 2px 2px black;
+
 }
 
 #topspacing {
