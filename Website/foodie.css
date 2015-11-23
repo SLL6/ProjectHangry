@@ -123,7 +123,14 @@ p {
 
 .foodie-match {
 	text-align:center;
-	color:rgb(38, 230, 34);
-	font-size:18pt;
+	background-color:#e74c3c;
 }
 
+.progress-bar {
+	background-color:rgb(38, 230, 34);
+}
+
+.progress-bar span {
+	font-size:18pt;
+	margin:5px 0px;
+}
