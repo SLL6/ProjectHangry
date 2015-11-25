@@ -91,7 +91,6 @@ p {
 .btn-primary {
     background-color:#E74C3C;
     width:60px;
-    height:20px;
 }
 
 
@@ -151,4 +150,8 @@ p {
     display: block;
     width: 100%;
     color: #fff;
+ }
+
+ .dropdown-toggle {
+    width:120px;
  }
