@@ -42,6 +42,18 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+.signup-reminder {
+    background-color:#e7a23c;
+    text-align:center;
+    padding:2px 0px;
+    font-size:12pt;
+}
+
+.signup-reminder a{
+    color:#fff;
+    text-decoration: none;
+}
+
 .blockimage{
     width:300px;
     height:130px;
@@ -91,7 +103,6 @@ p {
 .btn-primary {
     background-color:#E74C3C;
     width:60px;
-    height:20px;
 }
 
 
@@ -116,15 +127,32 @@ p {
 }
 
 .foodie-rating {
+    text-align:center;
+}
 
+span.foodie-rating {
+    margin:0px 2px;
+}
+
+.fa-star {
+    font-size:18pt;
+    color:#FFA200;
+}
+.no-star {
+    font-size:18pt;
+    color:#C9C9C9;
 }
 
 .foodie-time {
 
 }
+.fa-clock-o {
+    font-size:18pt;
+}
 
 .foodie-missing {
-
+    font-size:14pt;
+    color:#E74C3C;
 }
 
 .foodie-match {
@@ -133,10 +161,41 @@ p {
 }
 
 .progress-bar {
-	background-color:rgb(38, 230, 34);
+	background-color:#00dd24;
 }
 
 .progress-bar span {
 	font-size:18pt;
 	margin:5px 0px;
 }
+
+
+#eggs1{
+    background: url(https://myyellowfarmhouse.files.wordpress.com/2013/08/eggs-in-a-frame-cooked1.jpg);
+}
+#eggs2{
+    background: url(http://i.huffpost.com/gadgets/slideshows/323746/slide_323746_3079600_free.jpg);
+}
+#eggs3{
+    background: url(http://vitalfarms.com/wp-content/uploads/2014/02/scrambled-eggs.jpg);
+}
+#eggs1, #eggs2, #eggs3{
+    background-size: cover !important;
+}
+.progress {
+    position: relative;
+    height:30px;
+    margin:5px 0px;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: #fff;
+ }
+
+ .dropdown-toggle {
+    width:120px;
+ }
+=======
