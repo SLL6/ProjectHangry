@@ -143,6 +143,7 @@ p {
 
 
 
+
 #eggs1{
     background: url(https://myyellowfarmhouse.files.wordpress.com/2013/08/eggs-in-a-frame-cooked1.jpg);
 }
@@ -155,3 +156,14 @@ p {
 #eggs1, #eggs2, #eggs3{
     background-size: cover !important;
 }
+.progress {
+    position: relative;
+    height:30px;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: #fff;
+ }
