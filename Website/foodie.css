@@ -115,7 +115,20 @@ p {
 }
 
 .foodie-rating {
+    text-align:center;
+}
 
+span.foodie-rating {
+    margin:0px 2px;
+}
+
+.fa-star {
+    font-size:18pt;
+    color:#FFA200;
+}
+.no-star {
+    font-size:18pt;
+    color:#C9C9C9;
 }
 
 .foodie-time {
@@ -123,7 +136,8 @@ p {
 }
 
 .foodie-missing {
-
+    font-size:14pt;
+    color:#E74C3C;
 }
 
 .foodie-match {
@@ -143,6 +157,7 @@ p {
 .progress {
     position: relative;
     height:30px;
+    margin:5px 0px;
 }
 
 .progress span {
