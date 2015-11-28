@@ -12,7 +12,7 @@ h1, h6 {
 }
 
 h3 {
-	margin:0;
+	margin:5px 0px 0px 0px;
 }
 
 p {
@@ -145,7 +145,7 @@ span.foodie-rating {
 }
 
 .foodie-time {
-
+    font-size:16pt;
 }
 .fa-clock-o {
     font-size:18pt;
