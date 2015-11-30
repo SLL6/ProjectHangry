@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 
 body {
-    padding-top: 70px;
+    -padding-top: 70px;
 }
 
 h1, h6 {
@@ -21,7 +21,7 @@ p {
 }
 
 .foodie-subtitle {
-    margin: -10px 0px 0px 0px;
+    margin: -10px 0 0 0;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
 }
@@ -46,7 +46,7 @@ p {
 .signup-reminder {
     background-color: #e7a23c;
     text-align: center;
-    padding: 2px 0px;
+    padding: 2px 0;
     font-size: 12pt;
 }
 
@@ -59,20 +59,18 @@ p {
     width: 300px;
     height: 130px;
     background-color: #E74C3C;
-    margin: auto;
     color: white;
     box-shadow: 0 8px 6px -6px black;
     padding-top: 3px;
     padding-bottom: 3px;
-    margin-bottom: 50px;
+    margin: auto auto 50px;
 }
 
 .jumbotron {
-    background-image: url("index.jpg");
     height: 710px;
-    background-repeat: no-repeat;
+    background: url("index.jpg") no-repeat;
     background-size: cover;
-    margin-top: -20px;
+    padding-top: 70px;
 }
 
 .fancy {
@@ -105,7 +103,7 @@ p {
 }
 
 .form-control {
-    color: #FF3B30;
+    -color: #FF3B30;
 }
 
 .container {
@@ -143,7 +141,7 @@ p {
 }
 
 span.foodie-rating {
-    margin: 0px 2px;
+    margin: 0 2px;
 }
 
 .fa-star {
@@ -180,7 +178,7 @@ span.foodie-rating {
 
 .progress-bar span {
     font-size: 18pt;
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 
 #eggs1 {
@@ -204,7 +202,7 @@ span.foodie-rating {
 .progress {
     position: relative;
     height: 30px;
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 
 .progress span {
@@ -239,20 +237,25 @@ html, body, #tags {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.recipe_{
-padding-top: 10px;
+.recipe_ {
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.btn-facebook{
-background-color: #3b5998;
+.btn-facebook {
+    background-color: #3b5998;
 }
 
-.btn-google{
+.btn-google {
     background-color: #c23321;
 
 }
 
-.btn-google:hover{
-    background-color:  #A02515;
+.btn-google:hover {
+    background-color: #A02515;
+}
+
+.signup-reminder, .padding-top {
+    padding-top: 60px;
+
 }
