@@ -86,7 +86,6 @@ p {
     font-family: 'Lobster', cursive;
     font-size: 4em;
     color: #E74C3C;
-    text-shadow: 2px 2px black;
 
 }
 
@@ -205,3 +204,8 @@ span.foodie-rating {
 #cookware_jumbo {
     margin-top: -40px;
 }
+
+#cookware_search {
+    margin-top: 50px;
+}
+
