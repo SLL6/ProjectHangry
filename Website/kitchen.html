@@ -129,33 +129,47 @@ color: rgb(231,76,60) !important;
   <body>
 
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand navbartext" href="index.html">Foodie</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#sign-up">Sign Up</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#log-in">Login</a></li>
-            
-          </ul>
-        </div><!--/.nav-collapse -->
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbartext" href="index.html">Foodie</a>
       </div>
-    </nav>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!--    <li class="active"><a href="#">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+               </li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="matches1.html">Search</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Joe Smith <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">My Profile</a></li>
+              <li><a href="kitchen.html">My Kitchen</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Sign Out</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
 	
     <div class = "jumbotron">
-    <h2 style="margin-left:5%; margin-top:-1%; margin-bottom: 3%; font-size:32px;"><strong>&nbsp &nbsp &nbsp My Kitchen</strong></h2> 
+    <h2 style="margin-left:5%; margin-top:40px; margin-bottom: 3%; font-size:32px;"><strong>&nbsp &nbsp &nbsp My Kitchen</strong></h2>
     
       <!-- SEARCH BOX -->
       <div class="row">
@@ -176,7 +190,7 @@ color: rgb(231,76,60) !important;
       <div class="row">
     	<div class="col-md-1"></div>
     	<div class="col-md-4">
-    		<h2>&nbsp 	Ingredients</h2>
+    		<h2><strong>Ingredients</strong></h2>
     		<br />
     		
     		
@@ -215,7 +229,7 @@ color: rgb(231,76,60) !important;
     	</div>
     	<div class="col-md-1"></div>
     	<div class="col-md-4">
-    		<h2>&nbsp Cookware</h2>
+    		<h2><strong>Cookware</strong></h2>
     		<br />
     		
     		
