@@ -219,6 +219,11 @@ span.foodie-rating {
     margin-top: 50px;
 }
 
-html, body {
+html, body, #tags {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.recipe_{
+padding-top: 10px;
+    padding-bottom: 10px;
 }

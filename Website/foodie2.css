@@ -206,10 +206,12 @@ span.foodie-rating {
     margin-top: -40px;
 }
 
-#cookware_search {
-    margin-top: 50px;
+
+
+html, body, #tags {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-html, body {
-    font-family: 'Josefin Sans', sans-serif;
+#cookware_search{
+    padding-top: 50px;
 }
