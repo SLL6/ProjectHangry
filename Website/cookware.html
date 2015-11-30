@@ -26,23 +26,58 @@ f    <link href="foodie2.css" rel="stylesheet">
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <!-- Javascript -->
-    <script>
-       $(function() {
-          var availableTutorials = [
-             "ActionScript",
-             "Boostrap",
-             "C",
-             "C++",
-          ];
-          $( "#automplete-1" ).autocomplete({
-             source: availableTutorials
-          });
-       });
-    </script>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bs/js/bootstrap.min.js"></script>
+
+  <script>
+  $(function() {
+    var availableTags = [
+      "saucepan"
+    ];
+    function split( val ) {
+      return val.split( /,\s*/ );
+    }
+    function extractLast( term ) {
+      return split( term ).pop();
+    }
+ 
+    $( "#tags" )
+      // don't navigate away from the field on tab when selecting an item
+      .bind( "keydown", function( event ) {
+        if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).autocomplete( "instance" ).menu.active ) {
+          event.preventDefault();
+        }
+      })
+      .autocomplete({
+        minLength: 0,
+        source: function( request, response ) {
+          // delegate back to autocomplete, but extract the last term
+          response( $.ui.autocomplete.filter(
+            availableTags, extractLast( request.term ) ) );
+        },
+        focus: function() {
+          // prevent value inserted on focus
+          return false;
+        },
+        select: function( event, ui ) {
+          var terms = split( this.value );
+          // remove the current input
+          terms.pop();
+          // add the selected item
+          terms.push( ui.item.value );
+          // add placeholder to get the comma-and-space at the end
+          terms.push( "" );
+          this.value = terms.join( ", " );
+          return false;
+        }
+      });
+  });
+  </script>
 
   </head>
   <script type="text/javascript">
@@ -130,7 +165,7 @@ color: rgb(231,76,60) !important;
         <div class="col-md-8">
           <div class="input-group">
             <div class="ui-widget">
-              <input type="text" class="form-control" placeholder="+2qt. saucepan">
+              <input type="text" class="form-control" id="tags" placeholder="+2qt. saucepan">
             </div>
             <span class="input-group-btn">
               <a class="btn btn-default" href="matches.html">Find Recipes</a>
@@ -226,10 +261,5 @@ color: rgb(231,76,60) !important;
       </div>
 
     </div><!-- /.container -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bs/js/bootstrap.min.js"></script>
   </body>
 </html>
