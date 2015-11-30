@@ -199,3 +199,7 @@ span.foodie-rating {
     width:120px;
  }
  
+
+.navbar-default {
+    border-color: rgba(231, 231, 231, 0);
+}
