@@ -18,8 +18,6 @@
     <link href="awesomplete.css" rel="stylesheet">
     <link href="foodie.css" rel="stylesheet">
 
-    <script src="js/parse-1.6.7.min.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,61 +25,68 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <!-- Javascript -->
-    <script>
-       $(function() {
-          var availableTutorials = [
-             "ActionScript",
-             "Boostrap",
-             "C",
-             "C++",
-          ];
-          $( "#automplete-1" ).autocomplete({
-             source: availableTutorials
-          });
-       });
-    </script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bs/js/bootstrap.min.js"></script>
 
-  </head>
-  <script type="text/javascript">
-      Parse.initialize("RPHzbIdiqdMBlE5mPuf0lB6pJXAjpkRDyIT0fS3S", "YVlTAu8q6VwVVPRmrvBKNtPelasbu4CPKHSZVf00");
-      function makeAccount() {
-        var user = new Parse.User();
-        user.set("username", document.getElementById('inputUsername').value);
-        user.set("password", document.getElementById('inputPassword').value);
-        user.set("email", document.getElementById('inputEmail').value);
-          
-        user.signUp(null, {
-          success: function(user) {
-            // Hooray! Let them use the app now.
-          },
-          error: function(user, error) {
-            // Show the error message somewhere and let the user try again.
-            alert("Error: " + error.code + " " + error.message);
-          }
-        });
-      }
-
-      function login() {
-        Parse.User.logIn(document.getElementById('inputUsername2').value, document.getElementById('inputPassword2').value, {
-          success: function(user) {
-            // Logged in.
-            alert("Such username. Much log in. wow");
-          },
-          error: function(user, error) {
-            // error with logging in.
-            alert("Error: " + error.code + " " + error.message);
-          }
-        });
-      }
+  <script>
+  $(function() {
+    var availableTags = [
+      "egg",
+      "eggplant",
+      "egg noodles",
+      "ham",
+      "honey",
+      "hamburger",
+      "hash",
+      "ham steak"
+    ];
+    function split( val ) {
+      return val.split( /,\s*/ );
+    }
+    function extractLast( term ) {
+      return split( term ).pop();
+    }
+ 
+    $( "#tags" )
+      // don't navigate away from the field on tab when selecting an item
+      .bind( "keydown", function( event ) {
+        if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).autocomplete( "instance" ).menu.active ) {
+          event.preventDefault();
+        }
+      })
+      .autocomplete({
+        minLength: 0,
+        source: function( request, response ) {
+          // delegate back to autocomplete, but extract the last term
+          response( $.ui.autocomplete.filter(
+            availableTags, extractLast( request.term ) ) );
+        },
+        focus: function() {
+          // prevent value inserted on focus
+          return false;
+        },
+        select: function( event, ui ) {
+          var terms = split( this.value );
+          // remove the current input
+          terms.pop();
+          // add the selected item
+          terms.push( ui.item.value );
+          // add placeholder to get the comma-and-space at the end
+          terms.push( "" );
+          this.value = terms.join( ", " );
+          return false;
+        }
+      });
+  });
   </script>
 
+  </head>
   <body>
-
-
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -125,18 +130,7 @@
         <div class="col-md-8">
           <div class="input-group">
             <div class="ui-widget">
-              <input type="text" class="awesomplete form-control" list="ingredientList" placeholder="Start typing your ingredients...">
-              <datalist id="ingredientList">
-                <!-- E ingredients -->
-                <option>eggs</option>
-                <option>eggplant</option>
-                <option>JavaScript</option>
-                <option>Brainfuck</option>
-                <option>LOLCODE</option>
-                <option>Node.js</option>
-                <option>Ruby on Rails</option>
-                <!-- H ingredients -->
-              </datalist>
+              <input type="text" id="tags" class="form-control" placeholder="Start typing your ingredients...">
             </div>
             <span class="input-group-btn">
               <a class="btn btn-default" href="cookware.html">Continue</a>
@@ -232,10 +226,5 @@
       </div>
 
     </div><!-- /.container -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bs/js/bootstrap.min.js"></script>
   </body>
 </html>
