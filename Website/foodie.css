@@ -124,8 +124,22 @@ p {
     margin-bottom: 20px;
 }
 
+.greeneggs-header {
+    margin-bottom: 20px;
+}
+
 .foodie-rating {
-    text-align: center;
+    display: inline;
+}
+
+.foodie-rating h1 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.foodie-rating h3 {
+    display: inline;
+    margin-left: 10px;
 }
 
 span.foodie-rating {
