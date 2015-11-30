@@ -39,17 +39,25 @@
 	.rewardpic {
 		display:inline-block;
 		text-align:center;
+		font-size:18pt;
+		border:1px solid lightgrey;
+		border-radius:5px;
+		padding:3px;
+		width:120px;
 	}	
+
+	.rewardpic>p{
+		font-size:12pt;
+	}
 	
 	.bio {
 		margin-left:90px;
 		text-align:left;
 	}
 	
-	.spacing {
-	
-		margin-top:-230px;
-	
+	.thumbnail {
+		display:inline-block;
+		text-align:center;
 	}
 	
 	</style>
@@ -88,40 +96,39 @@
     </nav>
 
     <div class="container">
-	<div class="row">
+		<div class="row">
 
-		<div class="col-md-4"><img src="default_user.png" class="img-responsive" alt="Responsive image" height="300px" width="300px"></div>
-		<div class="col-md-3" style="font-size:20px; margin-top:10px; "><i>Chef </i>Joe Smith</div>
-		<div class="col-md-6">
-			<p style="text-align:left; ">I'm a third year student at UCSD trying learn how to cook. My favorite dishes are chucken alfredo with fettuccine and spicy chicken wings. I live in iHouse, so if you are on campus hit me up and let's cook!</p>
+			<div class="col-md-4"><img src="default_user.png" class="img-responsive"></div>
+			<div class="col-md-8">
+				<p style="font-size:24pt; margin-top:10px; "><i>Chef </i>Joe Smith</p>
+				<p style="text-align:left; font-size:14pt">I'm a third year student at UCSD trying learn how to cook. My favorite dishes are chicken alfredo with fettuccine and spicy chicken wings. I live in iHouse, so if you are on campus hit me up and let's cook!</p>
+			</div>
 		</div>
-		</div>
-	<!-- 	<div class="col-md-5">
-		
-		<h4 class="center" style="margin-left:-30px"><strong>My Rewards</strong><h4>
-		<hr>
-		
-		<div class="rewardpic">
-			<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-			<p style="font-size:0.8em">Created an account!</p>
-		</div>
-		
-		</div> -->
 	</div>
 	
+	<br>
 
-<div class="nav">
-    <div class = "container">
-    <ul class="nav nav-tabs">
-      <li> <a href="#"> Bookmark </a></li>
-      <li class="active"><a href="#"> Showroom </a></li>
-      <li ><a href="#"> My Rewards </a></li>
-      
-    </ul>
-		
+	<div class="nav">
+    	<div class = "container">
+			<div id="exTab2" class="container">
+			  <ul class="nav nav-tabs">
+			    <li class="active">
+			      <a href="#bookmark" data-toggle="tab">Bookmark</a>
+			    </li>
+			    <li><a href="#showroom" data-toggle="tab">Showroom</a>
+			    </li>
+			    <li><a href="#rewards" data-toggle="tab">My Rewards</a>
+			    </li>
+			  </ul>
+			</div>
+  	<div class="tab-content">
+	    <div class="tab-pane" id="bookmark">
+	      <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+	    </div>
 
+    <div class="tab-pane active" id="showroom">
 		<div class="row" style="margin-top:5px;">
-		  <div class="col-sm-6 col-md-4">
+		  <div class="col-md-4">
 			<div class="thumbnail">
 			  <img src="images/chicken_parmesan.jpg" class="img-responsive" alt="...">
 			  <div class="caption">
@@ -130,7 +137,7 @@
 			</div>
 		  </div>
 		  
-		  <div class="col-sm-6 col-md-4">
+		  <div class="col-md-4">
 			<div class="thumbnail">
 			  <img src="images/chicken_pie.jpg" class="img-responsive" alt="...">
 			  <div class="caption">
@@ -139,7 +146,7 @@
 			</div>
 		  </div>
 		    
-		  <div class="col-sm-6 col-md-4">
+		  <div class="col-md-4">
 			<div class="thumbnail">
 			  <img src="images/chicken_rotisserie.jpg" class="img-responsive" alt="...">
 			  <div class="caption">
@@ -149,19 +156,23 @@
 		  </div>
 		  
 		</div>
+    </div>
+    <div class="tab-pane" id="rewards">
+    	<br>
+    	<div class="rewardpic">
+			<span class="fa fa-heart-o"></span>
+			<p>Created an account!</p>
+		</div>
+		<div class="rewardpic">
+			<span class="fa fa-star-o"></span>
+			<p>First recipe rating!</p>
+		</div>
+    </div>
+  </div>
+			</div>
 		
 		</div> 
 	</div>
-	
-	</div>
-	
-
-
-  </div>
-</div>
-		
-	</div>
-    </div>
             
           
 
