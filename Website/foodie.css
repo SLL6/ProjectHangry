@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 
 body {
     padding-top: 70px;
@@ -21,7 +22,7 @@ p {
 
 .foodie-subtitle {
     margin: -10px 0px 0px 0px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
 }
 
@@ -39,7 +40,7 @@ p {
 }
 
 .navbar-right {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .signup-reminder {
@@ -108,12 +109,12 @@ p {
 }
 
 .container {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .center {
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 26px;
     margin-top: 40px;
     color: white;
@@ -230,4 +231,8 @@ span.foodie-rating {
 
 #cookware_search {
     margin-top: 50px;
+}
+
+html, body {
+    font-family: 'Josefin Sans', sans-serif;
 }
