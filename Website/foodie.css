@@ -184,15 +184,17 @@ span.foodie-rating {
 }
 
 #eggs1 {
-    background: url(https://myyellowfarmhouse.files.wordpress.com/2013/08/eggs-in-a-frame-cooked1.jpg);
+    background: url(http://i.huffpost.com/gadgets/slideshows/323746/slide_323746_3079600_free.jpg);
+
 }
 
 #eggs2 {
-    background: url(http://i.huffpost.com/gadgets/slideshows/323746/slide_323746_3079600_free.jpg);
+    background: url(http://vitalfarms.com/wp-content/uploads/2014/02/scrambled-eggs.jpg);
 }
 
 #eggs3 {
-    background: url(http://vitalfarms.com/wp-content/uploads/2014/02/scrambled-eggs.jpg);
+    background: url(https://myyellowfarmhouse.files.wordpress.com/2013/08/eggs-in-a-frame-cooked1.jpg);
+
 }
 
 #eggs1, #eggs2, #eggs3 {
