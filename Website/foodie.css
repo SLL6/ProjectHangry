@@ -1,93 +1,92 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Lobster); 
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
-	padding-top:70px;
+    padding-top: 70px;
 }
 
 h1, h6 {
-	text-align:center;
+    text-align: center;
 }
 
 h3 {
-	margin:5px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 p {
-	text-align:center;
+    text-align: center;
 }
 
 .foodie-subtitle {
-	margin:-10px 0px 0px 0px;
+    margin: -10px 0px 0px 0px;
     font-family: 'Raleway', sans-serif;
-    font-size:18px;
+    font-size: 18px;
 }
 
 .navbar {
-	background-color:#E74C3C;
+    background-color: #E74C3C;
 }
 
 .navbar-default .navbar-brand {
-	color:#fff;
-	font-size:24px;
+    color: #fff;
+    font-size: 24px;
 }
 
-.navbar-default .navbar-nav>li>a{
-	color:#fff;
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
 }
 
-.navbar-right{
+.navbar-right {
     font-family: 'Raleway', sans-serif;
 }
 
 .signup-reminder {
-    background-color:#e7a23c;
-    text-align:center;
-    padding:2px 0px;
-    font-size:12pt;
+    background-color: #e7a23c;
+    text-align: center;
+    padding: 2px 0px;
+    font-size: 12pt;
 }
 
-.signup-reminder a{
-    color:#fff;
+.signup-reminder a {
+    color: #fff;
     text-decoration: none;
 }
 
-.blockimage{
-    width:300px;
-    height:130px;
-    background-color:#E74C3C;
+.blockimage {
+    width: 300px;
+    height: 130px;
+    background-color: #E74C3C;
     margin: auto;
-    color:white;
+    color: white;
     box-shadow: 0 8px 6px -6px black;
     padding-top: 3px;
     padding-bottom: 3px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .jumbotron {
-  background-image:url("index.jpg"); 
-  height: 710px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -20px;
+    background-image: url("index.jpg");
+    height: 710px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
 }
 
-
 .fancy {
-	font-family: 'Lobster', cursive;
-    font-size:4em;
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
     letter-spacing: 3px;
-    color:#E74C3C;
+    color: #E74C3C;
     text-shadow: 2px 2px black;
 }
 
 .navbartext {
-    letter-spacing:normal;
+    letter-spacing: normal;
     font-family: 'Lobster', cursive;
-    font-size:4em;
-    color:#E74C3C;
+    font-size: 4em;
+    color: #E74C3C;
     text-shadow: 2px 2px black;
 
 }
@@ -97,17 +96,16 @@ p {
 }
 
 .btn {
-	background-color:#3C82E7;
-	color:#fff;
+    background-color: #3C82E7;
+    color: #fff;
 }
 
 .btn-primary {
-    background-color:#E74C3C;
+    background-color: #E74C3C;
 }
 
-
 .form-control {
-	color:#FF3B30;
+    color: #FF3B30;
 }
 
 .container {
@@ -115,77 +113,82 @@ p {
 }
 
 .center {
-	text-align:center;
+    text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size:26px;
-    margin-top:40px;
+    font-size: 26px;
+    margin-top: 40px;
     color: white;
 }
 
 .row-margin {
-	margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .foodie-rating {
-    text-align:center;
+    text-align: center;
 }
 
 span.foodie-rating {
-    margin:0px 2px;
+    margin: 0px 2px;
 }
 
 .fa-star {
-    font-size:18pt;
-    color:#FFA200;
+    font-size: 18pt;
+    color: #FFA200;
 }
+
 .no-star {
-    font-size:18pt;
-    color:#C9C9C9;
+    font-size: 18pt;
+    color: #C9C9C9;
 }
 
 .foodie-time {
-    font-size:16pt;
+    font-size: 16pt;
 }
+
 .fa-clock-o {
-    font-size:18pt;
+    font-size: 18pt;
 }
 
 .foodie-missing {
-    font-size:14pt;
-    color:#E74C3C;
+    font-size: 14pt;
+    color: #E74C3C;
 }
 
 .foodie-match {
-	text-align:center;
-	background-color:#e74c3c;
+    text-align: center;
+    background-color: #e74c3c;
 }
 
 .progress-bar {
-	background-color:#00dd24;
+    background-color: #00dd24;
 }
 
 .progress-bar span {
-	font-size:18pt;
-	margin:5px 0px;
+    font-size: 18pt;
+    margin: 5px 0px;
 }
 
-
-#eggs1{
+#eggs1 {
     background: url(https://myyellowfarmhouse.files.wordpress.com/2013/08/eggs-in-a-frame-cooked1.jpg);
 }
-#eggs2{
+
+#eggs2 {
     background: url(http://i.huffpost.com/gadgets/slideshows/323746/slide_323746_3079600_free.jpg);
 }
-#eggs3{
+
+#eggs3 {
     background: url(http://vitalfarms.com/wp-content/uploads/2014/02/scrambled-eggs.jpg);
 }
-#eggs1, #eggs2, #eggs3{
+
+#eggs1, #eggs2, #eggs3 {
     background-size: cover !important;
 }
+
 .progress {
     position: relative;
-    height:30px;
-    margin:5px 0px;
+    height: 30px;
+    margin: 5px 0px;
 }
 
 .progress span {
@@ -193,13 +196,16 @@ span.foodie-rating {
     display: block;
     width: 100%;
     color: #fff;
- }
+}
 
- .dropdown-toggle {
-    width:120px;
- }
- 
+.dropdown-toggle {
+    width: 120px;
+}
 
 .navbar-default {
     border-color: rgba(231, 231, 231, 0);
+}
+
+#cookware_jumbo {
+    margin-top: -40px;
 }
