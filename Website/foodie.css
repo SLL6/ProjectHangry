@@ -241,3 +241,16 @@ html, body, #tags {
 padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.btn-facebook{
+background-color: #3b5998;
+}
+
+.btn-google{
+    background-color: #c23321;
+
+}
+
+.btn-google:hover{
+    background-color:  #A02515;
+}
