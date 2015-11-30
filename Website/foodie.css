@@ -87,7 +87,6 @@ p {
     font-family: 'Lobster', cursive;
     font-size: 4em;
     color: #E74C3C;
-    text-shadow: 2px 2px black;
 
 }
 
@@ -206,3 +205,15 @@ span.foodie-rating {
     border-color: rgba(231, 231, 231, 0);
 }
 
+.navbar-brand:hover {
+    color: white;
+}
+
+.btn-default {
+
+    border-color: rgba(204, 204, 204, 0);
+}
+
+#cookware_search {
+    margin-top: 50px;
+}
