@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css">
 
     <!-- Other Stylesheets -->
+    <link href="awesomplete.css" rel="stylesheet">
     <link href="foodie.css" rel="stylesheet">
 
     <script src="js/parse-1.6.7.min.js"></script>
@@ -118,11 +119,23 @@
 
       <!-- SEARCH BOX -->
       <div class="row">
-        <div class="col-md-2"></div>
+        <div class="col-md-2">
+        </div>
         <div class="col-md-8">
           <div class="input-group">
             <div class="ui-widget">
-              <input type="text" class="form-control" placeholder="Start typing your ingredients...">
+              <input type="text" class="awesomplete form-control" list="ingredientList" placeholder="Start typing your ingredients...">
+              <datalist id="ingredientList">
+                <!-- E ingredients -->
+                <option>eggs</option>
+                <option>eggplant</option>
+                <option>JavaScript</option>
+                <option>Brainfuck</option>
+                <option>LOLCODE</option>
+                <option>Node.js</option>
+                <option>Ruby on Rails</option>
+                <!-- H ingredients -->
+              </datalist>
             </div>
             <span class="input-group-btn">
               <a class="btn btn-default" href="cookware.html">Continue</a>
