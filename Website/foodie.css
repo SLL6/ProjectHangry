@@ -260,6 +260,24 @@ html, body, #tags {
 
 }
 
-.carousel_top{
+.carousel_top {
     margin-top: -30px;
+}
+
+#flan1 {
+    background: url(https://s3.amazonaws.com/ODNUploads/5356afef45c84Flan.JPG);
+    background-size: cover !important;
+
+}
+
+#flan2 {
+    background: url(http://res.cloudinary.com/db79cecgq/image/upload/c_crop,h_720,w_1440,y_64/c_fill,h_800,w_1600/v1409146514/Flan_de_huevo_2.jpg);
+    background-size: cover !important;
+}
+
+#flan3 {
+
+    background: url(http://www.cookingfromthesoul.com/wp-content/uploads/2013/05/Flan1.jpg);
+    background-size: cover !important;
+
 }
