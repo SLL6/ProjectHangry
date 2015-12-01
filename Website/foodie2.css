@@ -68,7 +68,8 @@ p {
 
 .jumbotron {
     height: 710px;
-    background: url("images/restaurant_icons.png") repeat;
+    -background: url("images/restaurant_icons.png") repeat;
+    background-color: white;
     padding-top: 70px;
 }
 
@@ -210,4 +211,16 @@ html, body, #tags {
 
 #cookware_search {
     padding-top: 50px;
+}
+
+.remove_ex {
+    width: auto;
+}
+
+.btn-ing {
+    background-color: #E74C3C;
+}
+
+.group_food {
+    padding-bottom: 30px;
 }
