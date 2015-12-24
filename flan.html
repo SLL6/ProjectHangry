@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Foodie</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+
+    <!-- FontAwesome Stylesheets -->
+    <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css">
+
+    <!-- Other Stylesheets -->
+    <link href="css/foodie.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="css/carousel.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbartext" href="index.html">Foodie</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!--    <li class="active"><a href="#">Home</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     </li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="matches1.html">Search</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Weezy Baby <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="kitchen.html">My Kitchen</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+
+
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<!-- ********************************************************************* -->
+<div class="container-fluid carousel_top">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" id="flan1">
+                </div>
+                <div class="item" id="flan2">
+                </div>
+                <div class="item" id="flan3">
+
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="greeneggs-header">
+        <div class="foodie-rating">
+            <h1><strong>Flan</strong></h1>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star no-star"></span>
+
+            <h3>1 hr 20 min</h3>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <h3><strong>Ingredients</strong></h3>
+            <br/>
+            <h4>1 cup white sugar</h4>
+            <h4>3 eggs</h4>
+            <h4>14 oz milk</h4>
+            <h4>1 tablespoon vanilla extract</h4>
+            <br>
+            <img src="images/nutritionfacts.PNG"></img>
+        </div>
+        <div class="col-md-8">
+            <h3><strong>Directions</strong></h3>
+            <h4>1. Preheat oven to 350 degrees F (175 degrees C).</h4>
+            <h4>2. In a saucepan over medium-low heat, melt sugar until liquefied and golden in color. </h4>
+            <h4>3. Carefully pour hot syrup into a 9 inch round glass baking dish, turning the dish to evenly coat the
+                bottom and sides. Set aside.</h4>
+            <h4>4. Beat eggs. Beat in milk and vanilla until smooth. </h4>
+            <h4>5. Pour egg mixture into baking dish. Cover with aluminum foil.</h4>
+            <h4>6. Bake in preheated oven 60 minutes. Let cool completely.</h4>
+            <h4>7. To serve, carefully invert on serving plate with edges when completely cool.</h4><br>
+
+            <div class="form-group">
+                <label for="header">Write a review:</label>
+                <input type="text" class="form-control" placeholder="Title" id="header">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Write your review..." id="review"></textarea>
+            </div>
+            <a href="#">
+                <button type="button" class="btn btn-default raised round" data-toggle="modal" data-target="#submit">
+                    Submit
+                </button>
+            </a>
+        </div>
+    </div>
+    <!-- *********************************************************************-->
+
+    <!-- Submitted review modal -->
+    <div class="modal fade" id="submit" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title text-center">Review Submitted</h2>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-center">Thanks for your review!</h4>
+                    <h4 class="text-center">
+                        You have unlocked a new badge which can be viewed on your <a href="profile.html">profile</a>.
+                    </h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="log-in" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+
+                    <a class="btn btn-block btn-social btn-facebook"><span class="fa fa-facebook"></span>Login with
+                        Facebook</a>
+                    <a class="btn btn-block btn-social btn-google"><span class="fa fa-google"></span>Login with
+                        Google</a>
+
+                    <h3 class="center">Or</h3>
+
+                    <!-- Login fields -->
+                    <form class="form-signin">
+                        <div class="form-group">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                   required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                   required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <div class="center">
+                            <button class="btn btn-md btn-primary" type="submit">Login</button>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- /.container -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

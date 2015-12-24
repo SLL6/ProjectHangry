@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
+
+body {
+    -padding-top: 70px;
+}
+
+h1, h6 {
+    text-align: center;
+}
+
+h3 {
+    margin: 5px 0px 0px 0px;
+}
+
+p {
+    text-align: center;
+}
+
+.foodie-subtitle {
+    margin: -10px 0 0 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: #E74C3C;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-right {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.signup-reminder {
+    background-color: #e7a23c;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 12pt;
+}
+
+.signup-reminder a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blockimage {
+    width: 300px;
+    height: 130px;
+    background-color: #E74C3C;
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: auto auto 50px;
+}
+
+.jumbotron {
+    height: 710px;
+    background: url("../images/index.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.fancy {
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    letter-spacing: 3px;
+    color: #E74C3C;
+    text-shadow: 2px 2px black;
+}
+
+.navbartext {
+    letter-spacing: normal;
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    color: #E74C3C;
+
+}
+
+#topspacing {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #3C82E7;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #E74C3C;
+}
+
+.form-control {
+    -color: #FF3B30;
+}
+
+.container {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.center {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    margin-top: 40px;
+    color: white;
+}
+
+.row-margin {
+    margin-bottom: 20px;
+}
+
+.greeneggs-header {
+    margin-bottom: 20px;
+}
+
+.foodie-rating {
+    display: inline;
+}
+
+.foodie-rating h1 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.foodie-rating h3 {
+    display: inline;
+    margin-left: 10px;
+}
+
+span.foodie-rating {
+    margin: 0 2px;
+}
+
+.fa-star {
+    font-size: 18pt;
+    color: #FFA200;
+}
+
+.no-star {
+    font-size: 18pt;
+    color: #C9C9C9;
+}
+
+.foodie-time {
+    font-size: 16pt;
+}
+
+.fa-clock-o {
+    font-size: 18pt;
+}
+
+.foodie-missing {
+    font-size: 14pt;
+    color: #E74C3C;
+}
+
+.foodie-match {
+    text-align: center;
+    background-color: #e74c3c;
+}
+
+.progress-bar {
+    background-color: #00dd24;
+}
+
+.progress-bar span {
+    font-size: 18pt;
+    margin: 5px 0;
+}
+
+#eggs1 {
+    background: url(http://i.huffpost.com/gadgets/slideshows/323746/slide_323746_3079600_free.jpg);
+
+}
+
+#eggs2 {
+    background: url(http://vitalfarms.com/wp-content/uploads/2014/02/scrambled-eggs.jpg);
+}
+
+#eggs3 {
+    background: url(https://myyellowfarmhouse.files.wordpress.com/2013/08/eggs-in-a-frame-cooked1.jpg);
+
+}
+
+#eggs1, #eggs2, #eggs3 {
+    background-size: cover !important;
+}
+
+.progress {
+    position: relative;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+.dropdown-toggle {
+    width: 120px;
+}
+
+.navbar-default {
+    border-color: rgba(231, 231, 231, 0);
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.btn-default {
+
+    border-color: rgba(204, 204, 204, 0);
+}
+
+#cookware_search {
+    margin-top: 50px;
+}
+
+html, body, #tags {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.recipe_ {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-google {
+    background-color: #c23321;
+
+}
+
+.btn-google:hover {
+    background-color: #A02515;
+}
+
+.signup-reminder, .padding-top {
+    padding-top: 60px;
+
+}
+
+.carousel_top {
+    margin-top: -30px;
+}
+
+#flan1 {
+    background: url(https://s3.amazonaws.com/ODNUploads/5356afef45c84Flan.JPG);
+    background-size: cover !important;
+
+}
+
+#flan2 {
+    background: url(http://res.cloudinary.com/db79cecgq/image/upload/c_crop,h_720,w_1440,y_64/c_fill,h_800,w_1600/v1409146514/Flan_de_huevo_2.jpg);
+    background-size: cover !important;
+}
+
+#flan3 {
+
+    background: url(http://www.cookingfromthesoul.com/wp-content/uploads/2013/05/Flan1.jpg);
+    background-size: cover !important;
+
+}

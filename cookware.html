@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css">
 
     <!-- Other Stylesheets -->
-    <link href="css/awesomplete.css" rel="stylesheet">
-    <link href="css/foodie.css" rel="stylesheet">
+    <link href="css/foodie2.css" rel="stylesheet">
+
+    <script src="js/parse-1.6.7.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,14 +36,7 @@
     <script>
         $(function () {
             var availableTags = [
-                "egg",
-                "eggplant",
-                "egg noodles",
-                "ham",
-                "honey",
-                "hamburger",
-                "hash",
-                "ham steak"
+                "saucepan"
             ];
 
             function split(val) {
@@ -88,7 +82,48 @@
     </script>
 
 </head>
+<script type="text/javascript">
+    Parse.initialize("RPHzbIdiqdMBlE5mPuf0lB6pJXAjpkRDyIT0fS3S", "YVlTAu8q6VwVVPRmrvBKNtPelasbu4CPKHSZVf00");
+    function makeAccount() {
+        var user = new Parse.User();
+        user.set("username", document.getElementById('inputUsername').value);
+        user.set("password", document.getElementById('inputPassword').value);
+        user.set("email", document.getElementById('inputEmail').value);
+
+        user.signUp(null, {
+            success: function (user) {
+                // Hooray! Let them use the app now.
+            },
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    }
+
+    function login() {
+        Parse.User.logIn(document.getElementById('inputUsername2').value, document.getElementById('inputPassword2').value, {
+            success: function (user) {
+                // Logged in.
+                alert("Such username. Much log in. wow");
+            },
+            error: function (user, error) {
+                // error with logging in.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    }
+</script>
+
+<style>
+    input::-webkit-input-placeholder {
+        color: rgb(231, 76, 60) !important;
+    }
+</style>
+
 <body>
+
+
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -107,6 +142,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a><strong>Search</strong></a></li>
+
                 <li><a href="#" data-toggle="modal" data-target="#sign-up">Sign Up</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#log-in">Sign In</a></li>
 
@@ -119,23 +155,23 @@
     <div class="container" id="topspacing">
         <div class="blockimage"><h1 class="fancy">Foodie</h1>
             <p class="foodie-subtitle">Your next meal is waiting.</p>
-        </div>
+
+            <p style="color:black;padding-top: 50px;">Enter your cookware:</p></div>
 
 
     </div>
 
 
     <!-- SEARCH BOX -->
-    <div class="row">
-        <div class="col-md-2">
-        </div>
+    <div class="row" id="cookware_search">
+        <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="input-group">
                 <div class="ui-widget">
-                    <input type="text" id="tags" class="form-control" placeholder="Start typing your ingredients...">
+                    <input type="text" class="form-control" id="tags" placeholder="Enter cookware...">
                 </div>
             <span class="input-group-btn">
-              <a class="btn btn-default" href="cookware.html">Continue</a>
+              <a class="btn btn-default" href="matches.html">Find Recipes!</a>
             </span>
             </div><!-- /input-group -->
         </div><!-- /.col-md-8 -->
